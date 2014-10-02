@@ -1,60 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<!-- saved from url=(0034)http://siggame-status.appspot.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-
+    <title>SIG-Game Status</title>
+    <link rel="stylesheet" href="./SIG-Game Status_files/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./SIG-Game Status_files/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./SIG-Game Status_files/gh-buttons.css" type="text/css" media="screen">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
+    
   </head>
   <body>
-    <div class="container-fluid">
-        <div class="page-header">
-            <h1>SIG-Game Status </h1>
-        </div> 
-        <div class="row">
+    <div id="wrapper">
+      <div id="header">
+        <div class="actions button-container">
+          <a href="http://siggame-status.appspot.com/rss" class="button pill big" title="Subscribe to the RSS feed">
+            <i class="icon-rss"></i> Feeds
+          </a>
+          
+          <a href="" class="button pill big">
+            <i class="icon-exclamation-sign"></i> Report an Issue</a>
+        </div>
+        <img id="logo" src="./SIG-Game Status_files/logo.png" alt="Logo">
+        <a href="./SIG-Game Status_files/SIG-Game Status.htm"><h1 id="title">SIG-Game Status</h1></a>
+      </div>
+      <div id="content">
+          <div id="row">
+            
             <!-- This is shown only when NOT using mobile /-->
             <div class="hidden-xs">  
                 <table class="table table-bordered">
                     <tr>
                         <th>Service</th>
                         <th>Current</th>
-                        <th>Spet.24</th>
-                        <th>Spet.23</th>
-                        <th>Spet.22</th>
-                        <th>Spet.21</th>
-                        <th>Spet.20</th>
+                        <th>Sept.24</th>
+                        <th>Sept.23</th>
+                        <th>Sept.22</th>
+                        <th>Sept.21</th>
+                        <th>Sept.20</th>
                     </tr>
-                    <tr>
-                        <td>SIG-Game Git Service </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <tr align="center">
+                        <td><a href="http://siggame-status.appspot.com/services/sig-game-ssh-service">SIG-Game Git Service</a></td>
+                        <td class="success"><i class="fa fa-smile-o fa-3x" style="color:green"></i></td>
+                        <td><i class="fa fa-smile-o fa-3x" style="color:green"></i></td>
+                        <td><i class="fa fa-smile-o fa-3x" style="color:green"></i></td>
+                        <td><i class="fa fa-smile-o fa-3x" style="color:green"></i></td>
+                        <td><i class="fa fa-smile-o fa-3x" style="color:green"></i></td>
+                        <td><i class="fa fa-smile-o fa-3x" style="color:green"></i></td>
                     </tr>
-                    <tr>
-                        <td>Web Server</td>
-                        <td></td>
-                        <td></td>
+                    <tr align="center">
+                        <td><a href="http://siggame-status.appspot.com/services/web-server">Web Server</a></td>
+                        <td class="danger"><i class="fa fa-frown-o fa-3x" style="color:red"></i></td>
+                        <td class="warning"><i class="fa fa-meh-o fa-3x" style="color:orange"></i></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                 </table>
-            </div>
-            
+            </div> <!-- Hidden xs-->
+          
             <!-- This is shown only when on mobile /-->
             <div class="visible-xs">
                 
@@ -101,15 +108,36 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
+                </div> <!--Accordion--> 
+            </div> <!-- Only Visible when xs -->
+          </div>
+        </div> <!--Rows-->
 
+      </div>
+      <div id="push"></div>
+      
+    <div id="footer">
+      <ul class="left">
+        <li>
+          
+          <a href="http://siggame-status.appspot.com/admin">Admin</a>
+        </li>
+        
+        <li>
+          <a href="http://siggame-status.appspot.com/documentation">API</a>
+        </li>
+        <li>© 2010-2014 <a href="http://www.twilio.com/">Twilio Inc.</a></li>
+      </ul>
+      <ul class="right">
+        <li id="powered"><a href="http://www.stashboard.org/">POWERED BY <img src="./SIG-Game Status_files/poweredbystash.png" alt="stash!"> STASHBOARD</a></li>
+      </ul>
+    </div>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  </body>
-</html>
+      
+  
+
+</body></html>
